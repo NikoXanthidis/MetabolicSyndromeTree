@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-path = 'C:/Users/niko-_000/Desktop/All/pastas/academico/IA/MetabolicSyndromeTree/tree/MetabolicSyndrome.csv'
+path = 'C:/Users/SeuUsuario/PastaDeDestino/MetabolicSyndrome.csv'
 
 data = pd.read_csv(path)
 data.describe()
@@ -63,5 +63,5 @@ dot_data = tree.export_graphviz(dt, out_file=None,feature_names=features_list,fi
 
 graph = graphviz.Source(dot_data, format='png')
 
-dt_path = 'C:/Users/niko-_000/Desktop/Alex-copra/arvore'
+dt_path = 'C:/Users/SeuUsuario/PastaDeDestino/'
 graph.render(dt_path)
